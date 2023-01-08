@@ -19,7 +19,7 @@ app.use('/generador.html', express.static( 'generador.html'));      //esto agreg
 
 app.get('/' , (request, response) => {
 
-    response.sendFile(path.resolve(__dirname , "../index.html"))
+    response.sendFile(path.resolve(__dirname , "./archives/index.html"))
 
 
 });
