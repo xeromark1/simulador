@@ -22,7 +22,7 @@ app.use('/generador.html', express.static( 'generador.html'));      //esto agreg
 
 app.get('/' , (request, response) => {
 
-    response.sendFile(path.resolve(__dirname , "./archives/index.html"))
+    response.sendFile(path.resolve(__dirname , "./archives/public/tablaDisenio.css"))
 
 });
 const port = process.env.PORT || 4000;
