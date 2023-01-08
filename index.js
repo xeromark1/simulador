@@ -10,8 +10,8 @@ const app = express();
 app.use(express.json());
 app.use(express.urlencoded({extended: false}));
 
-//app.use(require('./archives/routes/comboboxDisenio'));
 app.use('/archives', express.static( 'archives'));      //esto agrega todo lo que es css y js
+app.use(require('./archives/routes/comboboxDisenio'));
 
 /*
 // Routes
