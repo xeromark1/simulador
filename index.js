@@ -5,7 +5,6 @@ const express = require('express');
 
 const app = express();
 
-/*
 // middlewares
 app.use(express.json());
 app.use(express.urlencoded({extended: false}));
@@ -15,19 +14,13 @@ app.use(require('./routes/index'));
 
 app.use('/public', express.static( 'public'));      //esto agrega todo lo que es css y js
 app.use('/generador.html', express.static( 'generador.html'));      //esto agrega todo lo que es css y js
-*/
-
-//app.use(require('./archives/public'));      //esto agrega todo lo que es css y js
 
 app.get('/' , (request, response) => {
 
-   //   response.send("pagina")
-
-      response.sendFile(path.resolve(__dirname , "./archives/index.html"))
+    response.sendFile(path.resolve(__dirname , "../index.html"))
 
 
 });
-
 const port = process.env.PORT || 4000;
 
 app.listen(port);
