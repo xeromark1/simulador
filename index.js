@@ -10,7 +10,7 @@ const app = express();
 app.use(express.json());
 app.use(express.urlencoded({extended: false}));
 
-app.use('/archives', express.static( 'archives'));      //esto agrega todo lo que es css y js
+app.use(require('./archives'));
 
 /*
 // Routes
