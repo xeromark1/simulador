@@ -1,5 +1,3 @@
-import "./archives/routes/comboboxDisenio.css";
-
 const path = require('path');
     //"dev": "nodemon index.js"
 
