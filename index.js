@@ -10,7 +10,7 @@ const app = express();
 app.use(express.json());
 app.use(express.urlencoded({extended: false}));
 
-app.use(require('./archives/routes/comboboxDisenio'));
+//app.use(require('./archives/routes/comboboxDisenio'));
 
 /*
 // Routes
