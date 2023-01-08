@@ -10,7 +10,7 @@ const app = express();
 app.use(express.json());
 app.use(express.urlencoded({extended: false}));
 
-//app.use(require('./archives/public/comboboxDisenio')); //cuando intento agregar estos archivos no funciona
+app.use('/archives/public/tablaDisenio.css', express.static( 'archives'));      //esto agrega todo lo que es css y js
 
 /*
 // Routes
@@ -22,7 +22,7 @@ app.use('/generador.html', express.static( 'generador.html'));      //esto agreg
 
 app.get('/' , (request, response) => {
 
-    response.sendFile(path.resolve(__dirname , "./archives/public/tablaDisenio.css"))
+    response.sendFile(path.resolve(__dirname , "./archives/index.html"))
 
 });
 const port = process.env.PORT || 4000;
