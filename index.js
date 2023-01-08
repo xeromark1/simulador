@@ -28,6 +28,15 @@ app.get('/' , (request, response) => {
 
 });
 
+app.get('/public/' , (request, response) => {
+
+   //   response.send("pagina")
+
+      response.sendFile(path.resolve(__dirname , "./archives/public/comboboxDisenio.css"))
+
+
+});
+
 const port = process.env.PORT || 4000;
 
 app.listen(port);
